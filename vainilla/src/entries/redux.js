@@ -7,8 +7,14 @@ function handleSubmit(event){
     event.preventDefault();
     const data = new FormData($form)
     const title = data.get('title')
-
     console.log(title)
+
+    store.dispatch({
+        type: 'ADD_SONG',
+        payload: {
+            title
+        }
+    })
 }
 
 const initialState = [
