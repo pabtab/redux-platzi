@@ -4,8 +4,11 @@ import Home from '../pages/containers/home';
 // import Playlist from './src/playlist/components/playlist';
 
 // console.log('Hola mundo!' )
+import normalizedData from '../schemas/index.js';
 
 import AppProvider from './AppProvider';
+
+console.log(normalizedData)
 
 const homeContainer = document.getElementById('home-container')
 
