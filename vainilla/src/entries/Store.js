@@ -1,10 +1,13 @@
 import { createStore } from 'redux';
-import data from '../api.json';
+//import data from '../api.json';
+import data from '../schemas/index.js';
 import reducer from '../reducers/Reducer.js';
 
 const initialState = {
   data: {
-    ...data
+    //...data,
+    entities: data.entities,
+    categories: data.result.categories
   },
   search: []
 }

@@ -10,8 +10,7 @@ export default (state = initialState, action) => {
     let results = [];
 
     if(action.payload.query) {
-      const list = state.data.categories[2].playlist;
-      results = list.filter( item => {
+      results = state.data.filter( item => {
         return item.author.toLowerCase().includes(action.payload.query.toLowerCase())
       })
     }
